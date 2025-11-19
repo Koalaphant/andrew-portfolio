@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 import Link from "next/link";
 import { ModeToggle } from "./DarkModeIcon";
 import { AiFillGithub } from "react-icons/ai";
-import { FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 
 type SocialIcon = {
   icon: ReactNode;
