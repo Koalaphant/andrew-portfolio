@@ -35,11 +35,9 @@ export default function Header() {
       </Link>
       <ul className="flex gap-2 items-center">
         {socialIcons.map((icon, index) => (
-          <Link href={icon.url} key={index} target="blank">
-            <li className="transition-all duration-200 hover:-translate-y-1">
-              {icon.icon}
-            </li>
-          </Link>
+          <li key={index} className="transition-all duration-200 hover:-translate-y-1">
+            <Link href={icon.url}>{icon.icon}</Link>
+          </li>
         ))}
         <li>
           <ModeToggle />
