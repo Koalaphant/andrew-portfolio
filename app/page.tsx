@@ -1,8 +1,6 @@
 import Divider from "@/components/Divider";
-import Form from "@/components/Form";
 import { Skills } from "@/components/Skills";
 import Social from "@/components/Social";
-import TestBlock from "@/components/TestBlock";
 import Title from "@/components/Title";
 
 export default function Home() {
@@ -34,8 +32,6 @@ export default function Home() {
       <Skills />
       <Divider amount="30" />
       <Social />
-      <TestBlock />
-      <Form />
     </>
   );
 }
