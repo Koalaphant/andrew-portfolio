@@ -1,13 +1,4 @@
-import mockSkills from "@/mock/skills";
-
-const prodSkills = [
-  {
-    skillTitle: "Loading",
-    items: ["Coming soon"],
-  },
-];
-
-const skills = process.env.NODE_ENV === "development" ? mockSkills : prodSkills;
+import skills from "@/data/skills";
 
 export const Skills = () => {
   return (

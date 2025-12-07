@@ -1,4 +1,5 @@
 import Divider from "@/components/Divider";
+import Projects from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import Title from "@/components/Title";
 
@@ -29,6 +30,9 @@ export default function Home() {
       </div>
       <Title text="Technical Skills" emoji="🧠" />
       <Skills />
+      <Divider />
+      <Title text="Projects" emoji="💼" />
+      <Projects />
     </>
   );
 }
