@@ -3,9 +3,15 @@ import MarkdownBlock from "@/components/MarkdownBlock";
 import Projects from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import Title from "@/components/Title";
-import { introMarkdown } from "@/data/intro-content";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 
-export default function Home() {
+export default async function Home() {
+  const introMarkdown = await readFile(
+    path.join(process.cwd(), "data", "intro-content.md"),
+    "utf-8"
+  );
+
   return (
     <>
       <div>

@@ -1,4 +1,4 @@
-export const introMarkdown = `## Hello! 👋🏼
+## Hello! 👋🏼
 
 ---
 
@@ -11,4 +11,3 @@ I also work in email development, where I've helped improve the workflow by crea
 ---
 
 Outside of coding, you'll usually find me watching football, tinkering with home automation or planning my next trip.
-`;
