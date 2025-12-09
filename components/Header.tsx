@@ -16,12 +16,12 @@ type SocialIcon = {
 
 const socialIcons: SocialIcon[] = [
   {
-    icon: <AiFillGithub className="text-lg" />,
+    icon: <AiFillGithub className="text-2xl" />,
     url: "https://github.com/Koalaphant",
     name: "Github",
   },
   {
-    icon: <FaLinkedin className="text-lg" />,
+    icon: <FaLinkedin className="text-2xl" />,
     url: "https://www.linkedin.com/in/andrewwardjones",
     name: "LinkedIn",
   },
@@ -51,7 +51,7 @@ export default function Header() {
           className="transition-all duration-200 hover:-translate-y-1 cursor-pointer"
           onClick={showContactForm}
         >
-          <BiMessageSquareEdit className="text-lg" />
+          <BiMessageSquareEdit className="text-2xl" />
         </li>
         {socialIcons.map((icon, index) => (
           <li
