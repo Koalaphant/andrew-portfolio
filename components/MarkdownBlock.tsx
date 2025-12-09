@@ -11,9 +11,7 @@ const defaultComponents: Components = {
       {children}
     </p>
   ),
-  hr: () => (
-    <hr className="my-0 border-0 border-t border-neutral-200 dark:border-neutral-800" />
-  ),
+  hr: () => <div className="my-1 h-px w-full" />,
   p: ({ children, ...props }) => (
     <p className="mb-2 text-[0.95rem] leading-relaxed last:mb-0" {...props}>
       {children}
