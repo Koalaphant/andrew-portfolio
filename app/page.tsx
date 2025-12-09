@@ -1,32 +1,15 @@
 import Divider from "@/components/Divider";
+import MarkdownBlock from "@/components/MarkdownBlock";
 import Projects from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import Title from "@/components/Title";
+import { introMarkdown } from "@/data/intro-content";
 
 export default function Home() {
   return (
     <>
       <div>
-        <p className="text-2xl font-bold">Hello! 👋🏼</p>
-        <Divider />
-        <p>
-          I&apos;m <strong>Andrew</strong>, a Software Engineer at a major UK
-          energy company who loves solving problems and building clean,
-          accessible interfaces with React, Next.js and TypeScript. I work on
-          frontend development for customer platforms, supporting releases,
-          refining features and helping keep everything running smoothly.
-        </p>
-        <Divider />
-        <p>
-          I also work in email development, where I&apos;ve helped improve the
-          workflow by creating a markdown-based system and contributing to a
-          reusable component design library.
-        </p>
-        <Divider />
-        <p>
-          Outside of coding, you&apos;ll usually find me watching football,
-          tinkering with home automation or planning my next trip.
-        </p>
+        <MarkdownBlock content={introMarkdown} />
       </div>
       <Title text="Technical Skills" emoji="🧠" />
       <Skills />
